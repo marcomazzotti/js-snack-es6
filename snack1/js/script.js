@@ -1,19 +1,19 @@
 const biciArray = [
   {
     nome: "Alfa",
-    peso: 1
-  },
-  {
-    nome: "Beta",
     peso: 3
   },
   {
+    nome: "Beta",
+    peso: 9
+  },
+  {
     nome: "Gamma",
-    peso: 5
+    peso: 15
   },
   {
     nome: "Delta",
-    peso: 0.5
+    peso: 1.5
   }
 ]
 
@@ -25,5 +25,7 @@ biciArray.forEach((element) => {
 });
 
 console.log(lightest);
+
+const {nome, peso} = lightest
 let messaggio = document.getElementById("result");
-messaggio.innerHTML =`La bici più leggera è ${lightest.nome} e pesa ${lightest.peso} kg.`;
+messaggio.innerHTML =`La bici più leggera è ${nome} e pesa ${peso} kg.`;

@@ -31,8 +31,9 @@ squadreArray.push(
 );
 
 const nuovoArray = squadreArray.map((item)=>{
-  return item.nome +' falli subiti: '+item.falliSubiti;
+  return item.nome +"falli subiti:" +item.falliSubiti;
 });
+console.log(nuovoArray);
 
 const messaggio = document.getElementById('result');
 for(let i = 0; i < nuovoArray.length; i++){
